@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/uikit.css">
-    <title>CHEF NAHID</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/css/uikit.css">
+	<title>CHEF NAHID</title>
 </head>
 <body>
+
 <!-- Nav --> 
-<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-center">
+<section class="uk-section uk-padding-remove">
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-visible@m" uk-navbar>
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-center-left"><div>
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Haqqımda</a></li>
+                        <li><a href="#">Biliklərim</a></li>
+                        <li><a href="#">Gördüyüm İşlər</a></li>
+                    </ul>
+                </div></div>
+                <a class="uk-navbar-item uk-logo" href="#">CHEF NAHID</a>
+                <div class="uk-navbar-center-right"><div>
+                    <ul class="uk-navbar-nav">
+                    	<li><a href="#">İş Keçmişim</a></li>
+                    	<li><a href="#">Reseptlər</a></li>
+                        <li><a href="#">İş Elanları</a></li>
+                        <li><a href="#">Əlaqə</a></li>
+                    </ul>
+                </div></div>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <nav class="uk-navbar-container uk-hidden@l" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">CHEF NAHID</a>
+            </div>
 
-        <div class="uk-navbar-center-left"><div>
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Haqqımda</a></li>
-                <li><a href="#">Biliklərim</a></li>
-                <li><a href="#">Gördüyüm İşlər</a></li>
-            </ul>
-        </div></div>
-        <a class="uk-navbar-item uk-logo" href="#">CHEF NAHID</a>
-        <div class="uk-navbar-center-right"><div>
-            <ul class="uk-navbar-nav">
-                <li><a href="#">İş Keçmişim</a></li>
-                <li><a href="#">Reseptlər</a></li>
-                <li><a href="#">İş Elanları</a></li>
-                <li><a href="#">Əlaqə</a></li>
-            </ul>
-        </div></div>
-
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+            </div>
+        </nav><!-- #Mobile Menu -->
     </div>
-</nav><!-- #Nav --> 
+</section><!-- #Nav --> 
 
 <!-- Image BG -->
-<div 
-    class="uk-position-relative uk-width-1-1 uk-background-fixed uk-background-cover uk-background-muted"
-    style="background-image: url(assets/uploads/bg.jpg);"
-    uk-height-viewport="offset-bottom: 200px">
+<section 
+    class="uk-position-relative uk-width-1-1 uk-background-fixed uk-background-cover  uk-background-muted"
+	style="background-image: url(assets/uploads/bg.jpg);"
+	uk-height-viewport="offset-bottom: 200px">
 
-    <div class="uk-position-cover uk-overlay-primary"></div>
-</div><!-- #Image BG -->
+	<div class="uk-position-cover uk-overlay-primary"></div>
+</section><!-- #Image BG -->
 
 <!-- About -->
 <section class="uk-section uk-section-small uk-width-1-1 uk-background-primary">
-    <div class="uk-container">
+	<div class="uk-container">
         <header class="uk-text-center uk-margin-bottom">
             <h1 class="font-lobster">Haqqımda</h1> 
             <span class="uk-display-inline-block line"><i class="icon icon-utensils"></i></span>
@@ -52,7 +65,7 @@
         <article class="uk-text-center uk-text-large">
             <p class="uk-margin-xlarge-left uk-margin-xlarge-right uk-text-bold">Salam Alimemmedov.com saytina xos gelmisiz bunu yaratmaqimda sebeb.8 illik tecrübemi sizle paylasmaqdir.Saytda islerim haqqinda etrfali melumatlar var.Bizi seçdiyniz üçün sizlere tesekkür edirik</p>
         </article>
-    </div>
+	</div>
 </section><!-- #About -->
 
 <!-- Biliklərim -->
@@ -62,31 +75,43 @@
             <h1 class="font-lobster">Biliklərim</h1> 
             <span class="uk-display-inline-block line"><i class="icon icon-utensils"></i></span>
         </header>  
-        <article class="uk-text-center uk-text-large">
+        <article class="uk-text-center">
             
             <div class="uk-child-width-1-4@s uk-grid-match" uk-grid>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title">Default</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-border-rounded uk-box-shadow-hover-large uk-transition-toggle">
+                        <img class="uk-transition-scale-up uk-transition-opaque uk-border-circle" 
+                             src="assets/icons/az.png" 
+                             width="128" height="128" alt="Azərbaycan Milli Kulinariya">
+                        <h3 class="font-lobster">Azərbaycan</h3>
+                        <p>Azərbaycan Milli Kulinariya</p>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title">Default</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-border-rounded uk-box-shadow-hover-large uk-transition-toggle">
+                        <img class="uk-transition-scale-up uk-transition-opaque uk-border-circle" 
+                             src="assets/icons/it.png" 
+                             width="128" height="128" alt="İtalya Mətbəxi">
+                        <h3 class="font-lobster">İtalya</h3>
+                        <p>İtalya Mətbəxi</p>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title">Default</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-border-rounded uk-box-shadow-hover-large uk-transition-toggle">
+                        <img class="uk-transition-scale-up uk-transition-opaque uk-border-circle" 
+                             src="assets/icons/euro.png" 
+                             width="128" height="128" alt="Avropa Mətbəxi">
+                        <h3 class="font-lobster">Avropa</h3>
+                        <p>Avropa Mətbəxi</p>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title">Default</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-border-rounded uk-box-shadow-hover-large uk-transition-toggle">
+                        <img class="uk-transition-scale-up uk-transition-opaque uk-border-circle" 
+                             src="assets/icons/ar.png" 
+                             width="128" height="128" alt="Argentina Steyk">
+                        <h3 class="font-lobster">Argentina</h3>
+                        <p>Argentina Steyk</p>
                     </div>
                 </div>
             </div>
@@ -94,6 +119,30 @@
         </article>
     </div>
 </section><!-- #Biliklərim -->
+
+<!-- Gördüyüm İşlər -->
+<section class="uk-section uk-section-small uk-width-1-1">
+    <div class="uk-container">
+        <header class="uk-text-center uk-margin-bottom">
+            <h1 class="font-lobster">Gördüyüm İşlər</h1> 
+            <span class="uk-display-inline-block line"><i class="icon icon-utensils"></i></span>
+        </header>  
+        <article class="uk-text-center">
+            <div class="uk-flex uk-flex-wrap uk-flex-center">
+                <ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: .switcher-container">
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+            <div class="uk-switcher switcher-container uk-margin">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+            </div>
+        </article>
+    </div>
+</section><!-- #Gördüyüm İşlər -->
 
 
 
