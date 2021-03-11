@@ -514,8 +514,12 @@
 
 }
 @mixin hook-cover-misc(){}
-@mixin hook-description-list-term(){}
-@mixin hook-description-list-description(){}
+@mixin hook-description-list-term(){
+    font-weight: normal;
+}
+@mixin hook-description-list-description(){
+    color: #fff;
+}
 @mixin hook-description-list-divider-term(){}
 @mixin hook-description-list-misc(){}
 @mixin svg-fill($src, $color-default, $color-new, $property: background-image){
@@ -611,7 +615,9 @@
 @mixin hook-form-range-track(){}
 @mixin hook-form-range-track-focus(){}
 @mixin hook-form-range-misc(){}
-@mixin hook-form(){}
+@mixin hook-form(){
+    border-bottom: 1px solid $global-color-secondary
+}
 @mixin hook-form-single-line(){}
 @mixin hook-form-multi-line(){}
 @mixin hook-form-focus(){}

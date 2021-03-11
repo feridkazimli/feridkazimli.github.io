@@ -40,7 +40,7 @@ $form-line-height:                               $form-height !default;
 $form-padding-horizontal:                        10px !default;
 $form-padding-vertical:                          4px !default;
 
-$form-background:                                $global-muted-background !default;
+$form-background:                                $global-color !default;
 $form-color:                                     $global-color !default;
 
 $form-focus-background:                          $global-muted-background !default;
@@ -49,7 +49,7 @@ $form-focus-color:                               $global-color !default;
 $form-disabled-background:                       $global-muted-background !default;
 $form-disabled-color:                            $global-muted-color !default;
 
-$form-placeholder-color:                         $global-muted-color !default;
+$form-placeholder-color:                         $global-color-secondary !default;
 
 $form-small-height:                              $global-control-small-height !default;
 $form-small-padding-horizontal:                  8px !default;
@@ -240,10 +240,11 @@ $internal-form-checkbox-indeterminate-image: "data:image/svg+xml;charset=UTF-8,%
     width: 100%;
     /* 3 */
     border: 0 none;
+    resize: none;
     /* 4 */
     padding: 0 $form-padding-horizontal;
     background: $form-background;
-    color: $form-color;
+    color: #fff;
     @if(mixin-exists(hook-form)) {@include hook-form();}
 }
 
@@ -288,8 +289,8 @@ $internal-form-checkbox-indeterminate-image: "data:image/svg+xml;charset=UTF-8,%
 .uk-select:focus,
 .uk-textarea:focus {
     outline: none;
-    background-color: $form-focus-background;
-    color: $form-focus-color;
+    background-color: rgba($form-focus-background, $alpha: 0.2);
+    color: #fff;
     @if(mixin-exists(hook-form-focus)) {@include hook-form-focus();}
 }
 
@@ -556,7 +557,7 @@ select.uk-form-width-xsmall { width: ($form-width-xsmall + 25px); }
     /* 1 */
     width: 100%;
     /* 2 */
-    color: inherit;
+    color: $global-color-secondary;
     /* 3 */
     padding: 0;
     /* 4 */
